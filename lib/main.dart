@@ -1,6 +1,8 @@
-import 'dart:ffi';
-
+import 'package:first_first_project/res/routes/routes.dart';
+import 'package:first_first_project/src/screens/login_screen.dart';
+import 'package:first_first_project/src/screens/user_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,18 +14,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.brown),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const LoginScreen(),
+      getPages: Routes.appRoutes(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
+/*class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
   final String title;
@@ -267,4 +270,4 @@ class _CustomDropdownState extends State<CustomDropdown> {
     _overlayEntry?.remove();
     super.dispose();
   }
-}
+}*/
