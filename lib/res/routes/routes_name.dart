@@ -3,5 +3,5 @@ class RoutesName {
 
   static const String USER_SCREEN = '/user_screen';
 
-  static const String GRiD_SCREEN = '/grid_screen';
+  static const String PRODUCT_SCREEN = '/product_screen';
 }

@@ -14,6 +14,11 @@ class Routes {
             name: RoutesName.USER_SCREEN,
             page: () => const UserScreen(title: 'Flutter App'),
             transitionDuration: const Duration(milliseconds: 250),
-            transition: Transition.rightToLeftWithFade)
+            transition: Transition.rightToLeftWithFade),
+    GetPage(
+        name: RoutesName.PRODUCT_SCREEN,
+        page: () => const UserScreen(title: 'Flutter App'),
+        transitionDuration: const Duration(milliseconds: 250),
+        transition: Transition.rightToLeftWithFade)
       ];
 }
